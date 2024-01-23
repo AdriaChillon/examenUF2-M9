@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen UF2</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        #ex2 audio {
+            display: none; /* Per ocultar el reproductor d'àudio */
+        }
+    </style>
 </head>
 <body>
     <h1>Examen UF2</h1>
@@ -16,7 +21,22 @@
     </div>
     <h2>Exercici 2</h2>
     <div id="ex2">
-        
+        <img id="nas" src="originals/pallasso.svg" alt="">
+        <br>
+        <audio id="riureAudio" src="originals/media/riure.mp3"></audio>
     </div>
+
+    <script>
+        // JavaScript per reproduir l'àudio al fer clic al nas
+        document.getElementById('nas').addEventListener('click', function() {
+            // Obtenir l'element d'àudio
+            var audio = document.getElementById('riureAudio');
+
+            // Comprovar si l'àudio ja s'ha reproduït, si no, reproduir-lo
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
 </body>
 </html>

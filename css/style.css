@@ -15,7 +15,7 @@ body {
     bottom: 0;
     left: 0;
     animation: moveCar 4s linear infinite;
-    width: 40%; /* Ajusta el ancho según sea necesario */
+    width: 20%; /* Ajusta el ancho según sea necesario */
 }
 
 @keyframes moveCar {
